@@ -7,17 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <title>Hello, world!</title>
+    <style>
+        #navbar {
+            background-color: #333;
+            position: fixed;
+            top: -50px;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+        }
+        
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
     <!-- NAVBAR -->
 
     <!-- NAVBAR GANTI COLOR PAS DI SCROLL -->
+    <!-- Top Navbar -->
+    <div id="navbar">
+        <div class="container d-flex">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="mainNav">
+            <ul class="nav mr-auto justify-content-start">
+                <li class="nav-item"><a href="#home">Home</a></li>
+            </ul>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#new">Newa</a></li>
+                <li class="nav-item"><a href="#new">Newa</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand text-white font-weight-bold" href="#">Senaka</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +73,7 @@
                         <a class="nav-link text-white" href="#">Galeri Senaka</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hubungi Kami
-              </a>
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hubungi Kami</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Whatsapp</a>
                             <a class="dropdown-item" href="#">Instagram</a>
@@ -44,7 +82,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- HEADER -->
 
@@ -127,6 +165,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+        }
+    </script>
 </body>
 
 </html>
