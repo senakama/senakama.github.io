@@ -101,3 +101,51 @@ html, body {
 #materi ul {
     margin-left: 20px;
 }
+
+/* GALERI SENAKA */
+.carousel-item {
+    height: 960px;
+}
+
+.carousel-item .display-4 {
+    margin-top: -440px;
+}
+
+/* KEGIATAN SENAKA */
+#kegiatan {
+    padding: 80px 0;
+}
+
+.card-deck {
+    padding-top: 40px;
+}
+
+/* MAPS SENAKA */
+.maps {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    padding-bottom: 20px;
+}
+
+/* FOOTER */
+#footer {
+    background-color: rgb(24, 24, 24);
+}
+
+.footer-img {
+    width: 120px;
+}
+
+.footer-box {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.license {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
