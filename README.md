@@ -4,7 +4,7 @@ It's a description about our family, a little family
 
 ## Link
 
-* [senakamaa](https://senakama.github.io)
+* [senakama.github.io](https://senakama.github.io)
 
 ## Authors
 
