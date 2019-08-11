@@ -4,10 +4,34 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Concert+One|Volkhov&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/aset/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+      .navbar {
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+        }
+
+        .navbar.scrolled {
+          background-color: black;
+          transition: 750ms ease;
+        }
+        
+        #mainNav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+    </style>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -15,9 +39,9 @@
 
       <!-- NAVBAR GANTI COLOR PAS DI SCROLL -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-        <a class="navbar-brand text-white font-weight-bold" href="#">Senaka</a>
+        <a class="asap navbar-brand text-white font-weight-bold" href="#">Senaka</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,18 +49,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Apa itu Senaka <span class="sr-only">(current)</span></a>
+              <a class="asap nav-link text-white" href="#">Apa itu Senaka <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Galeri Senaka</a>
+              <a class="asap nav-link text-white" href="#">Galeri Senaka</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="asap nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Hubungi Kami
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Whatsapp</a>
-                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="asap dropdown-item" href="#">Whatsapp</a>
+                <a class="asap dropdown-item" href="#">Instagram</a>
               </div>
             </li>
           </ul>
@@ -49,28 +73,28 @@
       <!-- NEK ISO IKI HEADER DIPERJELAS TULISAN'E -->
 
       <section id="header">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4"><span class="font-weight-bold">瀬中間</span></h1>
-            <hr class="my-4">
-            <p class="lead">Selamat datang di Landing Page Stemba Nakama SENAKA!</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Mari Mengenal Lebih Dalam Tentang Kami</a>
-        </div>
-    </div>
-    </section>
+          <div class="asap jumbotron jumbotron-fluid">
+              <div class="container">
+                  <div>
+                      <h1 class="volkov" style="margin-top: 220px; color: #ffffff; font-size: 6rem;">Se Nakama</h1>
+                      <p class="asap" style="color: #ffffff">Ekstrakurikuler Bahasa Jepang</p>
+                  </div>
+              </div>
+          </div>
+      </section>
 
     <!-- KETUA SENAKA -->
     <section id="ketua">
-        <div class="container text-center">
+        <div class="asap container text-center">
             <h1 class="ketua">KETUA & WAKIL SENAKA</h1>
             <div class="row">
                 <div class="col-md-6 service">
-                    <img src="/assets/images/profile.jpg" class="profile-img" alt="Zaskia Taufik">
+                    <img src="/aset/gambar/profile.jpg" class="profile-img" alt="Zaskia Taufik">
                     <h4>Zaskia Taufik Firmansah</h4>
                     <p>Ketua Senaka Angkatan 2019-2020</p>
                 </div>
                 <div class="col-md-6 service">
-                    <img src="/assets/images/profile.jpg" class="profile-img" alt="Alief">
+                    <img src="/aset/gambar/profile.jpg" class="profile-img" alt="Alief">
                     <h4>Alif naufal Ilyas</h4>
                     <p>Wakil Ketua Senaka Angkatan 2019-2020</p>
                 </div>
@@ -81,16 +105,26 @@
     </section>
 
     <!-- APA ITU SENAKA -->
-    <section id="senaka" class="bg-light text-dark">
+    <!--<section id="senaka" class="bg-light text-dark">
       <div class="container-fluid padding">
         <div class="row welcome text-center">
-          <div class="col-12">
-            <h1 class="senaka display-4">Apa Itu Senaka?</h1>
-          </div>
-          <div class="col-12">
-            <p class="lead">Senaka merupakan Ekstra Bahasa Jepang yang terdapat di Sekolah Menengah Kejurusan Semarang, STM PEMBANGUNAN.
+            <h1 class=" asap">Apa Itu Senaka?</h1>
+            <p class="asap">Senaka merupakan Ekstra Bahasa Jepang yang terdapat di Sekolah Menengah Kejurusan Semarang, STM PEMBANGUNAN.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure consequatur voluptatum enim illum excepturi consequuntur dolorum quis, ipsum rem totam quas, illo quibusdam repudiandae maiores. Magnam quae mollitia excepturi.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    
+    <section id="senaka" class="bg-light text-dark asap">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headerSenaka">
+              <h1 class="text-center">Apa Itu Senaka?</h2>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo repellat quae magnam aperiam necessitatibus aspernatur? Excepturi nobis facilis, beatae dolore qui magnam amet tempore consequuntur quidem voluptatibus corporis similique.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +132,7 @@
 
     <!-- MATERI SENAKA -->
     <section id="materi">
-      <div class="container">
+      <div class="container asap">
         <h1 class="title text-center">Apa Saja Yang Dipelajari di Senaka?</h1>
         <div class="row">
           <div class="col-md-6 materi">
@@ -112,8 +146,8 @@
               <li>Isiin</li>
             </ul>
           </div>
-          <div class="col-md-6"> <!-- CILIK KE MAS -->
-            <img src="/assets/images/senaka.png" alt="Logo Senaka">
+          <div class="col-md-6 gambar"> <!-- CILIK KE MAS -->
+            <img src="/aset/gambar/Webp.net-resizeimage.png" alt="Logo Senaka">
           </div>
         </div>
       </div>
@@ -123,24 +157,24 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/assets/images/culo1.jpg" class="d-block w-100" alt="...">
+            <img src="/aset/gambar/culo1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4"><span class="font-weight-bold">瀬中間</span></h1>
-              <p class="lead">Selamat datang di Landing Page Stemba Nakama SENAKA!</p>
+              <p class="asap">Galeri Tentang Apa Itu Senaka</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/culo2.jpg" class="d-block w-100" alt="...">
+            <img src="/aset/gambar/culo2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4"><span class="font-weight-bold">瀬中間</span></h1>
-              <p class="lead">Selamat datang di Landing Page Stemba Nakama SENAKA!</p>
+              <p class="asap">Galeri Tentang Apa Itu Senaka</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/culo3.jpg" class="d-block w-100" alt="...">
+            <img src="/aset/gambar/culo3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4"><span class="font-weight-bold">瀬中間</span></h1>
-              <p class="lead">Selamat datang di Landing Page Stemba Nakama SENAKA!</p>
+              <p class="asap">Galeri Tentang Apa Itu Senaka</p>
             </div>
           </div>
         </div>
@@ -156,12 +190,12 @@
 
       <!-- KEGIATAN SENAKA -->
       <section id="kegiatan" class="bg-light text-dark">
-          <div class="container text-center">
+          <div class="asap container text-center">
               <h1 class="kegiatan">Kegiata di Senaka</h1>
               <div class="row">
                   <div class="card-deck">
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -171,7 +205,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -181,7 +215,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -193,7 +227,7 @@
                     </div>
                     <div class="card-deck">
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -203,7 +237,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -213,7 +247,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="/assets/images/culo1.jpg" class="card-img-top" alt="...">
+                        <img src="/aset/gambar/culo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -229,7 +263,7 @@
       <!-- MAP SENAKA -->
       <section id="maps">
         <div class="container text-center">
-        <h1 class="maps">Dimanakah Senaka?</h1>
+        <h1 class="asap maps">Dimanakah Senaka?</h1>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1532536885543!2d110.41911441530124!3d-6.991223570411845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b5ec9c768e9%3A0x23b2fb89a9518453!2sSMKN+7+Semarang+(STM+Pembangunan)!5e0!3m2!1sid!2sid!4v1565444630628!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
@@ -237,16 +271,16 @@
       </section>
 
       <!-- FOOTER -->
-      <section id="footer" class="text-white">
+      <section id="footer" class="asap text-white">
         <div class="container-fluid padding">
           <div class="row">
             <div class="col-md-4 footer-box">
-              <img src="/assets/images/senaka.png" alt="..." class="footer-img">
+              <img src="/aset/gambar/senaka.png" alt="..." class="footer-img">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ad aperiam labore quia est, ut laboriosam error asperiores aliquam quod nesciunt! Corporis tenetur obcaecati blanditiis, reprehenderit eaque quia ratione.</p>
             </div>
             <div class="col-md-4 footer-box">
               <p><b>Kontak Kita</b></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ad aperiam labore quia est, ut laboriosam error asperiores aliquam quod nesciunt! Corporis tenetur obcaecati blanditiis, reprehenderit eaque quia ratione.</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste rem ipsum explicabo ratione, aut quo ipsam ad modi dolores fugiat, repudiandae molestiae laboriosam dolor nihil mollitia minima voluptates saepe fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore sapiente, beatae neque vero fugit nulla ipsum a saepe, sint, voluptate eos officia qui. In quibusdam, itaque recusandae libero magnam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint ad aperiam labore quia est, ut laboriosam error asperiores aliquam quod nesciunt! Corporis tenetur obcaecati blanditiis, reprehenderit eaque quia ratione.</p>
             </div>
             <div class="col-md-4 footer-box">
               <p><b>Email</b></p>
@@ -263,6 +297,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/aset/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 700);
+      });
+    </script>
   </body>
 </html>
