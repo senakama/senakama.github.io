@@ -17,6 +17,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .jumbotron {
@@ -79,6 +80,8 @@ body {
     width: 75%;
 }
 
+/* KEGIATA SENAKA */
+
 
 /* MATERI SENAKA */
 
@@ -107,12 +110,13 @@ body {
 }
 
 .carousel-item .display-4 {
-    margin-top: -440px;
+    margin-top: -500px;
 }
+
 
 /* KEGIATAN SENAKA */
 #kegiatan {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .card-deck {
@@ -131,7 +135,7 @@ iframe {
 
 /* FOOTER */
 #footer {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(37, 37, 37);
     padding-top: 40px;
 }
 
@@ -144,8 +148,6 @@ iframe {
     margin-bottom: 20px;
 }
 
-.license {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    text-align: center;
+.icon {
+    padding-left: 10px;
 }
