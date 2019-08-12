@@ -113,6 +113,7 @@ body {
 /* KEGIATAN SENAKA */
 #kegiatan {
     padding: 80px 0;
+    margin-top: 30px;
 }
 
 .card-deck {
@@ -149,3 +150,4 @@ iframe {
     padding-bottom: 20px;
     text-align: center;
 }
+

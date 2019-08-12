@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/aset/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <style>
       .navbar {
@@ -105,7 +106,7 @@
     </section>
 
     <!-- APA ITU SENAKA -->
-    <!--<section id="senaka" class="bg-light text-dark">
+    <section id="senaka" class="bg-light text-dark">
       <div class="container-fluid padding">
         <div class="row welcome text-center">
             <h1 class=" asap">Apa Itu Senaka?</h1>
@@ -115,7 +116,7 @@
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
     
     <section id="senaka" class="bg-light text-dark asap">
       <div class="container">
@@ -189,9 +190,72 @@
       </div>
 
       <!-- ALL GALERY -->
-
-      
-
+      <div class="container">
+          <div class="container gallery-container">
+            
+              <h1 class="text-center">This is Senaka</h1>
+            
+              <p class="page-description text-center">Lorem ipsum dolor sit amet.</p>
+                
+              <div class="tz-gallery">
+            
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                       
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                       
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="row"> 
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                       
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                       
+                      <div class="col-md-4">
+                          <div class="card">
+                              <a class="lightbox" href="/aset/gambar/culo1.jpg">
+                              <img src="/aset/gambar/culo1.jpg" alt="Park" class="card-img-top">
+                              </a>
+                          </div>
+                      </div>
+                   
+                  </div>
+            
+              </div>
+            
+          </div>
+           
+        </div>
       <!-- STOP GALLERY -->
 
       <!-- KEGIATAN SENAKA -->
@@ -304,6 +368,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/aset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+          baguetteBox.run('.tz-gallery');
+      </script>
     <script>
       $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 700);
