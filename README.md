@@ -9,7 +9,8 @@ It's a description about our family, a little family
 ## Authors
 
 * **Hamid Machfudin Sukardi** - *Initial work* - [hamidms](https://github.com/hamidms)
-* **Junianto Endra K.** - *Initial work* - [J3ndra](https://github.com/J3ndra)
+* **Junianto Endra Kartika** - *Initial work* - [J3ndra](https://github.com/J3ndra)
+* **Alan Sekha Yogastra** - *Initial work* - [4Lan2002](https://github.com/4Lan2002)
 
 ## License
 
