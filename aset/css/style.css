@@ -20,6 +20,11 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 .jumbotron {
     background-size: cover;
     height: 1000px;
