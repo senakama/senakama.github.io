@@ -19,3 +19,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 ## Motto
 
 * Seippai ni Nakama to Issho Ganbaru
+
+## -
